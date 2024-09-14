@@ -1,0 +1,169 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header Styles */
+.main-header {
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+#colormenu {
+    display: flex; /* Usa Flexbox para organizar el logo y el menú */
+    justify-content: space-between; /* Distribuye el espacio entre el logo y el menú */
+    align-items: center; /* Alinea verticalmente el logo y el menú */
+    background-color: #000000; /* Color de fondo del menú #fffbf0*/
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.logo img {
+    width: 20em; /* Ajusta el tamaño del logo según tus necesidades */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+}
+
+/* Estilos para el fondo del menú */
+#colormenu {
+    background-color: #fffbf0; /* Color de fondo del menú */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 0;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #555;
+}
+
+/* About Section */
+.about-section p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Menu Section */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Distribuye los ítems de forma flexible */
+    gap: 20px; /* Espacio entre ítems */
+}
+
+.menu-item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    position: relative;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.menu-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.menu-item h3, .menu-item p, .menu-item span {
+    position: relative;
+    z-index: 2;
+}
+
+/* Estilos específicos para las imágenes de fondo */
+.menu-item:nth-child(1) {
+    background-image: url(imagenes/ensalada.jpg);
+}
+
+.menu-item:nth-child(2) {
+    background-image: url(imagenes/pasta\ alfredo.jpg);
+}
+
+.menu-item:nth-child(3) {
+    background-image: url(imagenes/Filet\ Mignon.webp);
+}
+
+.menu-item:nth-child(4) {
+    background-image: url(imagenes/tarta\ limon.png);
+}
+
+.menu-item:nth-child(5) {
+    background-image: url(imagenes/sopa\ mariscos.jpg);
+}
+
+.menu-item:nth-child(6) {
+    background-image: url(imagenes/pizza.webp);
+}
+
+.menu-item:nth-child(7) {
+    background-image: url(imagenes/RISOTTO-DE-SETAS.webp);
+}
+
+.menu-item:nth-child(8) {
+    background-image: url(imagenes/cheesecake_de_frutos_rojos.jpg);
+}
+
+
+/* Contact Section */
+.contact-section p {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
+
