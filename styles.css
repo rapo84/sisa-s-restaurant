@@ -84,14 +84,15 @@ section {
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 4em;
     margin-bottom: 20px;
     text-align: center;
     color: #474747;
 }
 
+
 .subtitle {
-    font-size: 1em;
+    font-size: 2em;
     margin-bottom: 20px;
     text-align: center;
     color: #474747;
