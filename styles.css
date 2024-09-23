@@ -90,6 +90,17 @@ h2 {
     color: #474747;
 }
 
+.nota {
+    font-size: 1em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #474747;
+}
+
+.nota a {
+    color:#000000; /* Hereda el color del texto del contenedor */
+    text-decoration: none; /* Quita el subrayado del enlace */
+}
 
 .subtitle {
     font-size: 2em;
@@ -242,6 +253,26 @@ h2 {
     font-size: 1.2em;
 }
 
+.insta {
+    display: flex; /* Usa Flexbox para centrar el contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    margin-top: 20px; /* Espacio entre el párrafo y la línea de Instagram */
+}
+
+.insta img {
+    width: 2em; /* Ajusta el tamaño del logo según tus necesidades */
+    margin-right: 10px; /* Espacio entre el logo y el texto */
+}
+
+.insta a {
+    color: inherit; /* Hereda el color del texto del contenedor */
+    text-decoration: none; /* Quita el subrayado del enlace */
+}
+
+.insta a:hover {
+    text-decoration: underline; /* Opción de subrayado al pasar el mouse */
+}
 /* Footer */
 footer {
     text-align: center;
