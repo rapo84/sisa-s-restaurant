@@ -90,6 +90,13 @@ h2 {
     color: #474747;
 }
 
+.subtitle {
+    font-size: 1em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #474747;
+}
+
 /* About Section */
 .about-section p {
     font-size: 1.2em;
@@ -103,8 +110,11 @@ h2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Distribuye los ítems de forma flexible */
     gap: 20px; /* Espacio entre ítems */
+    margin-bottom: 20px; /* Espacio en la parte inferior de la rejilla */
 }
-
+/*--------------------------------------
+                ENTRANTES
+---------------------------------------*/
 .menu-item {
     background-color: #fff;
     border-radius: 10px;
@@ -130,6 +140,7 @@ h2 {
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
+    background: rgba(0, 0, 0, 0.7); /* Aumentar opacidad de la imagenes de los platos*/
 }
 
 .menu-item h3, .menu-item p, .menu-item span {
@@ -137,37 +148,90 @@ h2 {
     z-index: 2;
 }
 
-/* Estilos específicos para las imágenes de fondo */
+/* Estilos específicos para las imágenes de fondo  DE LOS ENTRANTES*/
 .menu-item:nth-child(1) {
-    background-image: url(imagenes/torreznos.jpeg);
+    background-image: url("imagenes/torreznos.jpeg");
 }
 
 .menu-item:nth-child(2) {
-    background-image: url(imagenes/pulpo\ a\ la\ gallega.jpeg);
+    background-image: url("imagenes/enlasada.jpeg");
 }
 
 .menu-item:nth-child(3) {
-    background-image: url(imagenes/rubia\ gallega.jpeg);
+    background-image: url("imagenes/croquetas.jpeg");
 }
 
 .menu-item:nth-child(4) {
-    background-image: url(imagenes/enlasada.jpeg);
+    background-image: url("imagenes/almejas.jpeg");
 }
 
-.menu-item:nth-child(5) {
-    background-image: url(imagenes/croquetas.jpeg);
+/*--------------------------------------------
+                 PRINCIPALES
+--------------------------------------------*/
+.menu-item2 {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    position: relative;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
-.menu-item:nth-child(6) {
-    background-image: url(imagenes/tacos\ de\ solomillo.jpeg);
+.menu-item2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.7); /* Aumentar opacidad de la imagenes de los platos*/
 }
 
-.menu-item:nth-child(7) {
-    background-image: url(imagenes/patatas\ bravas.jpeg);
+.menu-item2 h3, .menu-item2 p, .menu-item2 span {
+    position: relative;
+    z-index: 2; /* Asegúrate de que el z-index esté aplicado a todos los elementos de texto */
+    color: #fff; /* Asegúrate de que el color sea blanco */
+}
+/* Estilos específicos para las imágenes de fondo  DE LOS PRINCIPALES*/
+.menu-item2:nth-child(1) {
+    background-image: url("imagenes/torreznos.jpeg");
 }
 
-.menu-item:nth-child(8) {
-    background-image: url(imagenes/almejas.jpeg);
+.menu-item2:nth-child(2) {
+    background-image: url("imagenes/enlasada.jpeg");
+}
+
+.menu-item2:nth-child(3) {
+    background-image: url("imagenes/croquetas.jpeg");
+}
+
+.menu-item2:nth-child(4) {
+    background-image: url("imagenes/almejas.jpeg");
+}
+
+.menu-item2:nth-child(5) {
+    background-image: url("imagenes/rubia\ gallega.jpeg");
+}
+
+.menu-item2:nth-child(6) {
+    background-image: url("imagenes/tacos\ de\ solomillo.jpeg");
+}
+
+.menu-item2:nth-child(7) {
+    background-image: url("imagenes/patatas\ bravas.jpeg");
+}
+
+.menu-item2:nth-child(8) {
+    background-image: url("imagenes/pulpo\ a\ la\ gallega.jpeg");
 }
 
 
