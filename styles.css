@@ -215,35 +215,15 @@ h2 {
 }
 /* Estilos específicos para las imágenes de fondo  DE LOS PRINCIPALES*/
 .menu-item2:nth-child(1) {
-    background-image: url("imagenes/torreznos.jpeg");
-}
-
-.menu-item2:nth-child(2) {
-    background-image: url("imagenes/enlasada.jpeg");
-}
-
-.menu-item2:nth-child(3) {
-    background-image: url("imagenes/croquetas.jpeg");
-}
-
-.menu-item2:nth-child(4) {
-    background-image: url("imagenes/almejas.jpeg");
-}
-
-.menu-item2:nth-child(5) {
-    background-image: url("imagenes/rubia\ gallega.jpeg");
-}
-
-.menu-item2:nth-child(6) {
     background-image: url("imagenes/tacos\ de\ solomillo.jpeg");
 }
 
-.menu-item2:nth-child(7) {
-    background-image: url("imagenes/patatas\ bravas.jpeg");
+.menu-item2:nth-child(2) {
+    background-image: url("imagenes/pulpo\ a\ la\ gallega.jpeg");
 }
 
-.menu-item2:nth-child(8) {
-    background-image: url("imagenes/pulpo\ a\ la\ gallega.jpeg");
+.menu-item2:nth-child(3) {
+    background-image: url("imagenes/rubia\ gallega.jpeg");
 }
 
 
